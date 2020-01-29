@@ -3,7 +3,17 @@ body{
   background-color: whitesmoke;
 }
 
+.container{
+  --bg-color: teal;
+  border: 2px solid var(--bg-color, purple);
+}
+
 h1 {
-  background-color: royalblue;
+  background-color: var(--bg-color, purple);
   box-shadow: 2px 5px; 
+}
+
+button {
+ background-color: var(--bg-color, purple);
+ padding: 0.5rem;
 }
